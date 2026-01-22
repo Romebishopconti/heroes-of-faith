@@ -129,5 +129,12 @@ blockquote {
   color: #000;
 }
 
+.symbol {
+  font-size: 48px;
+  margin-bottom: 30px;
+  opacity: 0.6;
+}
+
+
 
 
