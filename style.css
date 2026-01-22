@@ -166,6 +166,34 @@ blockquote {
   font-size: 20px;
 }
 
+.hero-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-portrait {
+  max-width: 360px;
+  margin: 40px auto;
+  display: block;
+  border: 2px solid #c9a44c;
+  filter: grayscale(20%) contrast(1.1);
+}
+
+.hero-text {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 40px;
+  color: #c9a44c;
+  text-decoration: none;
+}
+
+
 
 
 
