@@ -61,4 +61,73 @@ blockquote {
   padding-left: 15px;
 }
 
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: radial-gradient(circle at top, #1c1c1c, #000);
+}
+
+.hero h1 {
+  font-size: 64px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.intro {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.heroes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+.hero-card {
+  padding: 30px;
+  border: 1px solid #c9a44c;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.hero-card:hover {
+  background: rgba(201, 164, 76, 0.1);
+  transform: translateY(-6px);
+}
+
+.center {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border: 2px solid #c9a44c;
+  text-decoration: none;
+  color: #c9a44c;
+  letter-spacing: 2px;
+}
+
+.btn:hover {
+  background: #c9a44c;
+  color: #000;
+}
+
+
 
