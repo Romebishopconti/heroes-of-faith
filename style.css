@@ -205,6 +205,34 @@ blockquote {
   text-decoration: none;
 }
 
+.hero-content {
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: #bfbfbf;
+  margin-bottom: 40px;
+}
+
+.hero-divider {
+  width: 120px;
+  height: 2px;
+  background: #c9a44c;
+  margin: 0 auto 40px;
+}
+
 
 
 
