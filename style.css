@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: serif;
-  background: #0e0e0e;
-  color: #f5f5f5;
+  font-family: 'Inter', sans-serif;
+  background-color: #0b0b0b;
+  color: #eaeaea;
 }
 
 header {
@@ -62,11 +62,18 @@ blockquote {
 }
 
 .hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 120px 20px;
-  background:
-    radial-gradient(circle at top, rgba(255,255,255,0.06), transparent 60%),
-    linear-gradient(to bottom, #0a0a0a, #000);
+
+  background: radial-gradient(
+    circle at center,
+    #1a1a1a 0%,
+    #0b0b0b 60%,
+    #000 100%
+  );
 }
 
 .hero h1 {
@@ -118,12 +125,12 @@ blockquote {
 }
 
 .btn {
-  display: inline-block;
-  padding: 14px 32px;
-  border: 2px solid #c9a44c;
-  text-decoration: none;
+  border: 1px solid #c9a44c;
   color: #c9a44c;
-  letter-spacing: 2px;
+  padding: 14px 28px;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
@@ -191,6 +198,11 @@ blockquote {
   margin-bottom: 40px;
   color: #c9a44c;
   text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.05em;
 }
 
 
