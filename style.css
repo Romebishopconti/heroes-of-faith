@@ -99,6 +99,15 @@ header {
   animation-delay: 0.8s;
 }
 
+.hero-fate {
+  margin-top: 12px;
+  font-size: 14px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #8f2f1c;
+  opacity: 0.85;
+}
+
 /* =========================
    BUTTONS
 ========================= */
@@ -188,6 +197,13 @@ header {
   margin: 0 auto;
   padding: 80px 20px;
   text-align: center;
+
+  background:
+    radial-gradient(
+      circle at bottom,
+      rgba(140, 40, 20, 0.15),
+      transparent 60%
+    );
 }
 
 .hero-dates {
@@ -258,6 +274,16 @@ header {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes ember {
+  0%   { opacity: 0.12; }
+  50%  { opacity: 0.2; }
+  100% { opacity: 0.12; }
+}
+
+.hero-page {
+  animation: ember 6s ease-in-out infinite;
 }
 
 
