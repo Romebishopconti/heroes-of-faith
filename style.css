@@ -63,7 +63,6 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-
   background: radial-gradient(
     circle at center,
     #1a1a1a 0%,
@@ -139,10 +138,9 @@ header {
   background: #111;
   border: 1px solid #1e1e1e;
   overflow: hidden;
-  transition:
-    transform 0.4s ease,
-    box-shadow 0.4s ease,
-    border-color 0.4s ease;
+  transition: transform 0.4s ease,
+              box-shadow 0.4s ease,
+              border-color 0.4s ease;
 }
 
 .hero-card:hover {
@@ -170,7 +168,6 @@ header {
 .card-content h2 {
   margin: 0 0 10px;
   font-size: 20px;
-  transition: color 0.4s ease;
 }
 
 .hero-card:hover h2 {
@@ -178,7 +175,7 @@ header {
 }
 
 /* =========================
-   HERO PAGE (MEMORIAL)
+   HERO PAGE (COMMON)
 ========================= */
 
 .hero-page {
@@ -186,13 +183,6 @@ header {
   margin: 0 auto;
   padding: 80px 20px;
   text-align: center;
-
-  background:
-    radial-gradient(
-      circle at bottom,
-      rgba(140, 40, 20, 0.15),
-      transparent 60%
-    );
 }
 
 .back-link {
@@ -260,6 +250,35 @@ header {
 }
 
 /* =========================
+   JACQUES DE MOLAY – FIRE
+========================= */
+
+.molay-page {
+  position: relative;
+  background: radial-gradient(
+    circle at bottom,
+    rgba(160, 50, 20, 0.35),
+    rgba(30, 0, 0, 0.7),
+    transparent 75%
+  );
+}
+
+.molay-page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at bottom,
+    rgba(255, 120, 40, 0.35),
+    rgba(120, 30, 10, 0.2),
+    transparent 80%
+  );
+  animation: fireGlow 3.5s ease-in-out infinite;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+/* =========================
    ANIMATIONS
 ========================= */
 
@@ -274,45 +293,13 @@ header {
   }
 }
 
-@keyframes ember {
-  0%   { opacity: 0.12; }
-  50%  { opacity: 0.2; }
-  100% { opacity: 0.12; }
-}
-
-/* =========================
-   JACQUES DE MOLAY – FIRE
-========================= */
-
-.molay-page {
-  position: relative;
-  background:
-    radial-gradient(
-      circle at bottom,
-      rgba(180, 60, 20, 0.25),
-      transparent 65%
-    );
-}
-
-.molay-page::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(
-      circle at bottom,
-      rgba(255, 120, 40, 0.18),
-      transparent 70%
-    );
-  animation: fireGlow 4s ease-in-out infinite;
-  pointer-events: none;
-}
-
 @keyframes fireGlow {
-  0%   { opacity: 0.15; }
-  50%  { opacity: 0.35; }
-  100% { opacity: 0.15; }
+  0%   { opacity: 0.25; }
+  50%  { opacity: 0.55; }
+  100% { opacity: 0.25; }
 }
+
+
 
 
 
