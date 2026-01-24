@@ -4,8 +4,8 @@ const heroes = [
     link: "heroes/georgiy.html"
   },
   {
-    name: "Александр Невский",
-    link: "heroes/alexander.html"
+    name: "Амакуса Сиро",
+    link: "heroes/amakusa.html"
   },
   {
     name: "Жак де Молле",
@@ -28,3 +28,4 @@ heroes.forEach(hero => {
 
   list.appendChild(card);
 });
+
