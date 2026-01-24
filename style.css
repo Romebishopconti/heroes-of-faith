@@ -193,8 +193,6 @@ header {
       rgba(140, 40, 20, 0.15),
       transparent 60%
     );
-
-  animation: ember 6s ease-in-out infinite;
 }
 
 .back-link {
@@ -280,6 +278,40 @@ header {
   0%   { opacity: 0.12; }
   50%  { opacity: 0.2; }
   100% { opacity: 0.12; }
+}
+
+/* =========================
+   JACQUES DE MOLAY – FIRE
+========================= */
+
+.molay-page {
+  position: relative;
+  background:
+    radial-gradient(
+      circle at bottom,
+      rgba(180, 60, 20, 0.25),
+      transparent 65%
+    );
+}
+
+.molay-page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at bottom,
+      rgba(255, 120, 40, 0.18),
+      transparent 70%
+    );
+  animation: fireGlow 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes fireGlow {
+  0%   { opacity: 0.15; }
+  50%  { opacity: 0.35; }
+  100% { opacity: 0.15; }
 }
 
 
