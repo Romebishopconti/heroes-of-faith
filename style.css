@@ -180,7 +180,7 @@ header {
 }
 
 /* =========================
-   HERO PAGE (PERSON)
+   HERO PAGE (MEMORIAL)
 ========================= */
 
 .hero-page {
@@ -190,17 +190,29 @@ header {
   text-align: center;
 }
 
+.hero-dates {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.3em;
+  color: #c9a44c;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
 .hero-portrait {
   max-width: 360px;
   margin: 40px auto;
   display: block;
   border: 2px solid #c9a44c;
-  filter: grayscale(20%) contrast(1.1);
+  filter: grayscale(60%) contrast(1.15);
 }
 
 .hero-text {
   font-size: 18px;
   line-height: 1.6;
+}
+
+.hero-text p {
+  margin-bottom: 24px;
 }
 
 .back-link {
@@ -210,14 +222,27 @@ header {
 }
 
 /* =========================
-   QUOTES
+   MEMORIAL QUOTE
 ========================= */
 
-blockquote {
-  margin-top: 40px;
-  font-style: italic;
-  border-left: 3px solid #c9a44c;
-  padding-left: 15px;
+.memorial-quote {
+  margin: 60px auto 0;
+  max-width: 600px;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 30px;
+  color: #bfbfbf;
+  position: relative;
+}
+
+.memorial-quote::before {
+  content: "✝";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #c9a44c;
+  opacity: 0.6;
 }
 
 /* =========================
@@ -234,6 +259,7 @@ blockquote {
     transform: translateY(0);
   }
 }
+
 
 
 
